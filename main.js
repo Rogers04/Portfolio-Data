@@ -64,8 +64,23 @@ sr.reveal('.skills__data, .work__img, .contact__input', {interval: 200});
 
 
 
+// Verification of message send
+
+const form = document.querySelector('.contact__form');
+const nameInput = document.querySelector('.contact__input[type="text"]');
+const emailInput = document.querySelector('.contact__input[type="mail"]');
+
+const messageInput = document.querySelector('contact__input[type="textarea"]');
+const submitButton = document.querySelector('.contact__button');
 
 
+submitButton.addEventListener('click', () => {
 
+    if (nameInput.value === '' || emailInput.value === '' || messageInput.value === '') {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
 
+    alert('Mensagem enviada com sucesso!!');
 
+});
