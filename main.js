@@ -60,12 +60,13 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400});
 sr.reveal('.home__social-icon',{ interval: 200});
-sr.reveal('.skills__data, .work__img, .contact__input', {interval: 200});
+sr.reveal('.skills__data, .work__img, .contact__input, .contact__button', {interval: 200});
 
 
 
 // Verification of message send
 
+/*
 const form = document.querySelector('.contact__form');
 const nameInput = document.querySelector('.contact__input[type="text"]');
 const emailInput = document.querySelector('.contact__input[type="mail"]');
@@ -84,3 +85,4 @@ submitButton.addEventListener('click', () => {
     alert('Mensagem enviada com sucesso!!');
 
 });
+*/
