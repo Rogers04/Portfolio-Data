@@ -64,25 +64,22 @@ sr.reveal('.skills__data, .work__img, .contact__input, .contact__button', {inter
 
 
 
-// Verification of message send
 
+
+// Slide operation system
 /*
-const form = document.querySelector('.contact__form');
-const nameInput = document.querySelector('.contact__input[type="text"]');
-const emailInput = document.querySelector('.contact__input[type="mail"]');
+let count = 1;
+document.getElementById("radio1").checked = true;
 
-const messageInput = document.querySelector('contact__input[type="textarea"]');
-const submitButton = document.querySelector('.contact__button');
+setInterval(function(){
+nextImage();
+},4000);
 
-
-submitButton.addEventListener('click', () => {
-
-    if (nameInput.value === '' || emailInput.value === '' || messageInput.value === '') {
-        alert('Por favor, preencha todos os campos.');
-        return;
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
     }
-
-    alert('Mensagem enviada com sucesso!!');
-
-});
+    document.getElementById("radio"+count).checked = true;
+}
 */
