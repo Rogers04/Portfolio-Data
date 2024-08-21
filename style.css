@@ -75,6 +75,11 @@ img{
     height: auto;
     display: block;
 }
+video{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 /*--- Class CSS ---*/
@@ -320,13 +325,16 @@ img{
     z-index: var(--z-back);
 }
 .skills__web{
-    width: 35%;
+    width: 55%;
 }
 .skills__mobile{
-    width: 55%;
+    width: 50%;
 }
 .skills__games{
     width: 45%;
+}
+.skills__firebase{
+    width: 25%;
 }
 
 .skills__img{
@@ -352,117 +360,16 @@ img{
     transform: scale(1.1);
 }
 
-
-/*Slides Work*/
-
-.slider{
-    margin-right: 550px;
-    display: flex;
-    width: 400px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 30px;
-
+.work__video{
+    border: 5px solid #777777;
+    border-radius: 0.6rem;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
 }
-
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
+video:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide img{
-    width: 400px;
-    height: 250px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 400px;
-    margin-top: -395px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 1px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 20px;
-}
-
-.manual-btn:hover{
-    background-color: #fff;
-}
-#radio1:checked ~ .pri{
-    margin-left: 0;
-}
-#radio2:checked ~ .pri{
-    margin-left: -25%;
-}
-#radio3:checked ~ .pri{
-    margin-left: -50%;
-}
-#radio4:checked ~ .pri{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 1px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 400px;
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 20px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
-}
-
-
-
-/*-------------------------------------------*/
-
-
-
-
-
 
 
 
@@ -569,9 +476,8 @@ img{
     .contact__container{
         justify-content: center;
     }
+    
 }
-
-
 
 @media screen and (min-width: 768px){
     body{
@@ -628,6 +534,8 @@ img{
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
+    
+    
 
 }
 
