@@ -65,21 +65,19 @@ sr.reveal('.skills__data, .work__img, .work__video, .contact__input, .contact__b
 
 
 
+/*--- Operation of system of video my projects ---*/
+var video = document.querySelectorAll('video')
 
-// Slide operation system
-/*
-let count = 1;
-document.getElementById("radio1").checked = true;
+video.forEach(play => play.addEventListener('click', () => { 
 
-setInterval(function(){
-nextImage();
-},4000);
+    play.classList.toggle('active'); 
 
-function nextImage(){
-    count++;
-    if(count>4){
-        count = 1;
+    if(play.paused){
+        play.play();
+    }else{
+        play.pause();
+        play.currentTime = 0;
     }
-    document.getElementById("radio"+count).checked = true;
-}
-*/
+
+}));
+
