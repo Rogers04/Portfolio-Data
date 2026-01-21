@@ -325,16 +325,16 @@ video{
     z-index: var(--z-back);
 }
 .skills__web{
-    width: 55%;
+    width: 60%;
 }
 .skills__mobile{
-    width: 50%;
+    width: 35%;
 }
 .skills__games{
-    width: 45%;
+    width: 40%;
 }
-.skills__firebase{
-    width: 25%;
+.skills__Des{
+    width: 50%;
 }
 
 .skills__img{
