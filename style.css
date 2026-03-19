@@ -324,18 +324,6 @@ video{
     border-radius: 0.5rem;
     z-index: var(--z-back);
 }
-.skills__web{
-    width: 60%;
-}
-.skills__mobile{
-    width: 35%;
-}
-.skills__games{
-    width: 40%;
-}
-.skills__Des{
-    width: 50%;
-}
 
 .skills__img{
     border-radius: 0.5rem;
